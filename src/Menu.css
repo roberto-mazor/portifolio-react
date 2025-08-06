@@ -1,0 +1,122 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1f1f1f;
+  text-align: center;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Botão do menu (mobile) */
+#menu-toggle {
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #bb86fc;
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: color 0.3s;
+  min-width: 100%;
+  min-height: 100%;
+  -webkit-tap-highlight-color: transparent; /* Remove flash ao tocar */
+  touch-action: manipulation; /* Melhora resposta ao toque */
+}
+
+#menu-toggle:hover,
+#menu-toggle:focus {
+  color: #ffffff;
+  outline: none;
+}
+
+/* Menu de navegação */
+.menu {
+  background-color: #1f1f1f;
+  padding: 10px 0;
+  text-align: center;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+
+  margin: 0 auto; /*  Garante que o menu fique sempre centralizado horizontalmente */
+  width: 100%; /*  Ocupa toda a largura disponível */
+  box-sizing: border-box; /*  Evita que padding/margin causem deslocamento */
+}
+
+.menu.show {
+  max-height: 500px;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.menu li {
+  margin: 10px 0;
+}
+
+.menu a {
+  color: #bb86fc;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  background-color: #bb86fc;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.menu a:hover::after,
+.menu a:focus::after {
+  transform: scaleX(1);
+}
+
+.menu a:hover,
+.menu a:focus {
+  color: #ffffff;
+  outline: none;
+}
+
+/* Layout para telas maiores */
+@media (min-width: 768px) {
+  #menu-toggle {
+    display: none;
+  }
+
+  .menu {
+    display: block !important;
+    position: static;
+    background-color: transparent;
+    max-height: none;
+    margin: 0 auto; /*  Mantém centralizado também no desktop */
+  }
+
+  .menu ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  .menu li {
+    display: inline;
+    margin: 0 15px;
+  }
+}
