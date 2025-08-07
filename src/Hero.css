@@ -1,0 +1,89 @@
+section {
+  padding: 20px;
+}
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("Public/gb-image.jpeg");
+  /* Aplica uma imagem de fundo com um gradiente escuro por cima para melhorar a legibilidade do texto */
+
+  background-size: cover; /* Faz a imagem cobrir toda a área da seção */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita que a imagem se repita */
+
+  height: 100vh; /* Ocupa 100% da altura da janela do navegador */
+
+  display: flex; /* Usa Flexbox para centralizar o conteúdo */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  text-align: center; /* Centraliza o texto */
+  color: #ffffff; /* Cor padrão do texto dentro da seção */
+}
+
+.hero-content {
+  animation: fadeIn 1s ease-in-out; /* Aplica uma animação de entrada suave */
+}
+
+.hero h2 {
+  color: #bb86fc; /* Cor roxa para o título */
+  font-size: 2.5em; /* Tamanho grande para destaque */
+  margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+.hero img {
+  border-radius: 50%; /* Deixa a imagem redonda */
+  width: 150px; /* Largura da imagem */
+  height: 150px; /* Altura da imagem */
+  margin-bottom: 20px; /* Espaço abaixo da imagem */
+}
+
+.hero p {
+  font-size: 1.2em; /* Tamanho da fonte do parágrafo */
+  margin-bottom: 20px; /* Espaço abaixo do parágrafo */
+}
+
+.links-rapidos a {
+  color: #bb86fc; /* Cor roxa para os links */
+  margin: 0 10px; /* Espaçamento horizontal entre os links */
+  text-decoration: none; /* Remove o sublinhado padrão */
+  font-weight: bold; /* Deixa o texto em negrito */
+  transition: color 0.3s; /* Transição suave na mudança de cor */
+}
+
+.links-rapidos a:hover {
+  color: #ffffff; /* Muda a cor do link ao passar o mouse */
+}
+
+.cta-button {
+  display: inline-block; /* Permite aplicar padding e margens */
+  background-color: #bb86fc; /* Cor de fundo roxa */
+  color: #121212; /* Cor do texto (preto escuro) */
+  margin-top: 30px; /* Espaço acima do botão */
+  padding: 10px 20px; /* Espaçamento interno */
+  border-radius: 5px; /* Bordas arredondadas */
+  text-decoration: none; /* Remove sublinhado */
+  font-weight: bold; /* Texto em negrito */
+  transition: background-color 0.3s, color 0.3s; /* Transições suaves de cor */
+}
+
+.cta-button:hover {
+  background-color: #ffffff; /* Cor de fundo ao passar o mouse */
+  color: #121212; /* Cor do texto permanece escura */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Começa invisível */
+    transform: translateY(-20px); /* Levemente acima da posição final */
+  }
+
+  to {
+    opacity: 1; /* Totalmente visível */
+    transform: translateY(0); /* Volta à posição original */
+  }
+}
+
+.hero img {
+    width: 100px; /* Reduz o tamanho da imagem */
+    height: 100px;
+}
