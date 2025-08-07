@@ -1,0 +1,104 @@
+.contato {
+  background-color: #1e1e1e; /* Cor de fundo escura */
+  color: white; /* Cor padrão do texto */
+  padding: 60px 20px; /* Espaçamento interno */
+  text-align: center; /* Centraliza o conteúdo */
+}
+
+.contato h2 {
+  color: #bb86fc; /* Cor roxa para o título */
+  font-size: 2em; /* Tamanho do título */
+  margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+.form-group {
+  margin-bottom: 20px; /* Espaço entre os grupos de formulário */
+  max-width: 500px; /* Largura máxima do formulário */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  padding-top: 30px; /* Espaço acima do grupo */
+}
+
+.form-group label {
+  padding-bottom: 2rem; /* Espaço abaixo do rótulo */
+}
+
+.input-icon {
+  display: flex; /* Layout em linha para ícone e campo */
+  align-items: center; /* Alinha verticalmente */
+  background-color: #333; /* Fundo escuro para o campo */
+  border-radius: 5px; /* Bordas arredondadas */
+  padding: 10px; /* Espaçamento interno */
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.input-icon img {
+  width: 20px; /* Largura do ícone */
+  height: 20px; /* Altura do ícone */
+  margin-right: 10px; /* Espaço entre o ícone e o campo */
+}
+
+.input-icon input,
+.input-icon textarea {
+  width: 100%; /* Ocupa toda a largura disponível */
+  border: none; /* Remove borda padrão */
+  background: none; /* Fundo transparente */
+  color: white; /* Cor do texto */
+  padding: 10px; /* Espaçamento interno */
+  outline: none; /* Remove contorno ao focar */
+}
+
+.contato button {
+  display: inline-block; /* Permite aplicar padding e margens */
+  background-color: #bb86fc; /* Cor de fundo roxa */
+  color: #ffffff; /* Cor do texto */
+  margin-top: 30px; /* Espaço acima do botão */
+  padding: 10px 20px; /* Espaçamento interno */
+  border-radius: 5px; /* Bordas arredondadas */
+  text-decoration: none; /* Remove sublinhado */
+  font-weight: bold; /* Texto em negrito */
+  transition: background-color 0.3s, color 0.3s; /* Transições suaves */
+}
+
+.contato button:hover {
+  background-color: white; /* Cor de fundo ao passar o mouse */
+  color: #121212; /* Cor do texto ao passar o mouse */
+}
+
+.form-feedback {
+  margin-top: 20px; /* Espaço acima da mensagem de feedback */
+  color: #bb86fc; /* Cor roxa */
+  font-size: 1.2em; /* Tamanho da fonte */
+}
+
+.social-links {
+  margin-top: 20px; /* Espaço acima dos ícones sociais */
+  font-size: 37px; /* Tamanho base dos ícones */
+}
+
+.social-links a {
+  margin: 0 10px; /* Espaço horizontal entre os links */
+  display: inline-block; /* Permite aplicar margens e efeitos */
+  color: #bb86fc; /* Cor roxa dos ícones */
+}
+
+.social-links i {
+  width: 40px; /* Largura do ícone */
+  height: 40px; /* Altura do ícone */
+  transition: transform 0.3s; /* Animação suave ao passar o mouse */
+}
+
+.social-links i:hover {
+  transform: scale(1.1); /* Aumenta levemente o ícone no hover */
+}
+
+/* Responsividade para campos de entrada com ícones */
+@media (max-width: 768px) {
+  .input-icon {
+    flex-direction: column; /* Empilha ícone e campo verticalmente */
+    align-items: flex-start; /* Alinha à esquerda */
+  }
+
+  .input-icon i {
+    margin-bottom: 10px; /* Espaço abaixo do ícone */
+  }
+}
