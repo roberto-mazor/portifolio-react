@@ -1,0 +1,55 @@
+/* Seção experiencia */
+
+.experiencia {
+  background-color: #121212; /* Cor de fundo escura */
+  color: white; /* Cor padrão do texto */
+  padding: 60px 20px; /* Espaçamento interno */
+  text-align: center; /* Centraliza o conteúdo */
+}
+
+.experiencia h2 {
+  color: #bb86fc; /* Cor roxa para o título */
+  font-size: 2em; /* Tamanho do título */
+  margin-bottom: 40px; /* Espaço abaixo do título */
+}
+
+.exp-card {
+  justify-content: center; /* Alinhar o conteúdo horizontalmente no centro de um contêiner flexível. */
+  align-items: flex-start; /* Alinha os itens ao topo */
+  background-color: #1e1e1e; /* Fundo escuro para o card */
+  border-radius: 10px; /* Bordas arredondadas */
+  padding: 20px; /* Espaçamento interno */
+  margin-bottom: 20px; /* Espaço entre os cards */
+  max-width: 800px; /* Largura máxima */
+  margin-left: auto;
+  margin-right: auto; /* Centraliza horizontalmente */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
+  transition: transform 0.3s ease; /* Animação suave ao passar o mouse */
+}
+
+.exp-card:hover {
+  transform: translateY(-5px); /* Eleva o card levemente ao passar o mouse */
+}
+
+.exp-content h3 {
+  color: #bb86fc; /* Cor roxa para o título da experiência */
+  margin-top: 0; /* Remove margem superior */
+}
+
+.exp-content p {
+  color: #ccc; /* Cor cinza clara para o texto */
+  margin: 5px 0; /* Espaçamento vertical entre parágrafos */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .exp-card {
+    flex-direction: column; /* Empilha ícone e conteúdo verticalmente */
+    align-items: center; /* Centraliza os itens */
+    text-align: center; /* Centraliza o texto */
+  }
+
+  .exp-icon {
+    margin-bottom: 15px; /* Espaço abaixo do ícone */
+  }
+}
