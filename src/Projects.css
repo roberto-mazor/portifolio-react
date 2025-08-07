@@ -84,11 +84,10 @@
 }
 
 .projetos .container {
-    flex-direction: column; /* Empilha os cards verticalmente */
-    align-items: center; /* Centraliza os cards */
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; /* opcional, se quiser alinhar verticalmente */
+  gap: 20px;
+}
 
-.projetos .container {
-    flex-direction: column; /* Empilha os cards verticalmente */
-    align-items: center; /* Centraliza os cards */
-  }
