@@ -1,0 +1,94 @@
+.projetos {
+  background-color: #121212; /* Cor de fundo escura */
+  color: white; /* Cor padrão do texto */
+  padding: 60px 20px; /* Espaçamento interno */
+  text-align: center; /* Centraliza o conteúdo */
+}
+
+.projetos h2 {
+  color: #bb86fc; /* Cor roxa para o título */
+  font-size: 2em; /* Tamanho do título */
+  margin-bottom: 40px; /* Espaço abaixo do título */
+}
+
+.projetos .container {
+  display: flex; /* Layout flexível para os cards */
+  flex-wrap: wrap; /* Permite quebra de linha */
+  justify-content: center; /* Centraliza os cards */
+  gap: 20px; /* Espaço entre os cards */
+}
+
+.projetos .card {
+  background-color: #1e1e1e; /* Fundo escuro para o card */
+  border-radius: 10px; /* Bordas arredondadas */
+  overflow: hidden; /* Esconde conteúdo que ultrapassar o card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animações suaves */
+  width: 100%; /* Ocupa toda a largura disponível */
+  max-width: 300px; /* Largura máxima do card */
+  text-align: left; /* Alinha o conteúdo à esquerda */
+  animation: fadeInUp 1s ease forwards; /* Animação de entrada */
+  opacity: 0; /* Começa invisível */
+}
+
+.projetos .card img {
+  width: 100%; /* Imagem ocupa toda a largura do card */
+  height: auto; /* Altura automática para manter proporção */
+}
+
+.projetos .card h3 {
+  color: #bb86fc; /* Cor roxa para o título do projeto */
+  font-size: 1.5em; /* Tamanho do título */
+  margin: 15px; /* Espaço ao redor */
+}
+
+.projetos .card p {
+  color: #ccc; /* Cor cinza clara para o texto */
+  font-size: 1em; /* Tamanho da fonte */
+  margin: 15px; /* Espaço ao redor */
+}
+
+.projetos .tags {
+  margin: 15px; /* Espaço ao redor das tags */
+}
+
+.tag {
+  display: inline-block; /* Permite aplicar padding e margens */
+  background-color: #bb86fc; /* Cor de fundo roxa */
+  color: #121212; /* Cor do texto escura */
+  padding: 5px 10px; /* Espaçamento interno */
+  border-radius: 5px; /* Bordas arredondadas */
+  font-size: 0.9em; /* Tamanho da fonte */
+  margin-right: 5px; /* Espaço entre as tags */
+}
+
+.projetos .card a {
+  display: block; /* Ocupa toda a largura */
+  background-color: #bb86fc; /* Cor de fundo roxa */
+  color: white; /* Cor do texto */
+  text-align: center; /* Centraliza o texto */
+  padding: 10px; /* Espaçamento interno */
+  text-decoration: none; /* Remove sublinhado */
+  transition: background 0.3s, color 0.3s; /* Transições suaves */
+  border-radius: 0 0 10px 10px; /* Bordas arredondadas na parte inferior */
+}
+
+.projetos .card a:hover {
+  background-color: white; /* Cor de fundo ao passar o mouse */
+  color: #121212; /* Cor do texto ao passar o mouse */
+}
+
+.projetos .card:hover {
+  transform: translateY(-10px); /* Eleva o card ao passar o mouse */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra mais intensa */
+}
+
+.projetos .container {
+    flex-direction: column; /* Empilha os cards verticalmente */
+    align-items: center; /* Centraliza os cards */
+  }
+
+.projetos .container {
+    flex-direction: column; /* Empilha os cards verticalmente */
+    align-items: center; /* Centraliza os cards */
+  }
