@@ -1,0 +1,161 @@
+/* seção formação */
+
+.formacao {
+  background-color: #1e1e1e; /* Cor de fundo escura */
+  color: white; /* Cor padrão do texto */
+  padding: 60px 20px; /* Espaçamento interno */
+  text-align: center; /* Centraliza o conteúdo */
+}
+
+.formacao h2 {
+  color: #bb86fc; /* Cor roxa para o título */
+  font-size: 2em; /* Tamanho do título */
+  margin-bottom: 40px; /* Espaço abaixo do título */
+}
+
+
+.timeline {
+  position: relative; /* Necessário para posicionar a linha central */
+  max-width: 800px; /* Largura máxima da timeline */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  padding: 20px 0; /* Espaçamento vertical */
+}
+
+.timeline::after {
+  content: ""; /* Cria a linha vertical central */
+  position: absolute;
+  width: 6px;
+  background-color: #bb86fc; /* Cor da linha */
+  top: 0;
+  bottom: 0;
+  left: 50%; /* Centraliza horizontalmente */
+  margin-left: 5px; /* Compensa metade da largura da linha */
+}
+
+.timeline-item {
+  padding: 20px 30px;
+  position: relative;
+  background-color: inherit;
+  width: 60%; /* Cada item ocupa metade da largura */
+}
+
+/* Cursos complentares */
+
+.cursos-complementares {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.cursos-complementares h3 {
+  color: #bb86fc;
+  font-size: 1.8em;
+  margin-bottom: 30px;
+}
+
+.cursos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.curso-card {
+  background-color: #333;
+  color: white;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.curso-card h4 {
+  color: #bb86fc;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.curso-card p {
+  font-size: 0.95em;
+  margin: 0;
+}
+
+/* final curso completares */
+
+
+.timeline-item::after {
+  content: ""; /* Cria o ponto na linha central */
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px; /* Posiciona o ponto à direita do item */
+  background-color: white;
+  border: 4px solid #bb86fc;
+  top: 15px;
+  border-radius: 50%; /* Deixa o ponto circular */
+  z-index: 1;
+}
+
+.timeline-item:nth-child(odd) {
+  left: -3%; /* Itens ímpares à esquerda */
+}
+
+.timeline-item:nth-child(even) {
+  left: 45%; /* Itens pares à direita (ajustado para centralizar) */
+}
+
+.timeline-item .timeline-icon {
+  position: absolute;
+  top: 15px;
+  left: -60px; /* Posiciona o ícone à esquerda do item */
+  width: 50px;
+  height: 50px;
+  background-color: #bb86fc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeline-item .timeline-icon img {
+  width: 30px;
+  height: 30px;
+}
+
+.timeline-item .timeline-content {
+  padding: 20px 30px;
+  background-color: #333; /* Fundo escuro para o conteúdo */
+  position: relative;
+  border-radius: 6px;
+}
+
+.timeline-item .timeline-content h3 {
+  color: #bb86fc; /* Cor roxa para os títulos */
+  margin-top: 0;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .timeline-item {
+    width: 100%; /* Ocupa toda a largura */
+    padding-left: 70px; /* Espaço para o ícone à esquerda */
+    padding-right: 25px;
+  }
+
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even) {
+    left: 0; /* Todos os itens ficam alinhados à esquerda */
+  }
+
+  .timeline-item::after {
+    left: 60px; /* Reposiciona o ponto da linha */
+  }
+
+  .timeline::after {
+    left: 60px; /* Reposiciona a linha central */
+  }
+
+  .timeline-item .timeline-icon {
+    left: 10px; /* Reposiciona o ícone */
+  }
+}
