@@ -1,0 +1,44 @@
+.notfound-container {
+  height: 100vh;
+  background-color: #0f0f0f;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.notfound-container h1 {
+  font-size: 8rem;
+  margin: 0;
+}
+
+.notfound-container p {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.back-home {
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #bb86fc;
+  color: #0f0f0f;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(187, 134, 252, 0.3);
+  transition: all 0.3s ease;
+}
+
+.back-home:hover {
+  background-color: #a675e0;
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(187, 134, 252, 0.5);
+}
+
+
+
