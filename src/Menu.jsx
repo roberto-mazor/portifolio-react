@@ -1,22 +1,34 @@
-import'./Menu.css'
+import React, { useState } from 'react';
+import './Menu.css';
 
+function Menu() {
+  const [menuAberto, setMenuAberto] = useState(false);
 
-function Menu (){
+  const alternarMenu = () => {
+    setMenuAberto(!menuAberto);
+  };
 
-return(
+  const fecharMenu = () => {
+    setMenuAberto(false);
+  };
+
+  return (
     <header>
-            <button id="menu-toggle">☰</button>
-            <nav className="menu" id="mobile-menu">
-                <ul>
-                    <li><a href="#inicio">Início</a></li>
-                    <li><a href="#sobre-mim">Sobre Mim</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#formacao">Formação</a></li>
-                    <li><a href="#experiencia">Experiência</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
+      <button id="menu-toggle" onClick={alternarMenu}>☰</button>
+      <nav className={`menu ${menuAberto ? 'show' : ''}`} id="mobile-menu">
+        <ul>
+          <li><a href="#inicio" onClick={fecharMenu}>Início</a></li>
+          <li><a href="#sobre-mim" onClick={fecharMenu}>Sobre Mim</a></li>
+          <li><a href="#projetos" onClick={fecharMenu}>Projetos</a></li>
+          <li><a href="#formacao" onClick={fecharMenu}>Formação</a></li>
+          <li><a href="#experiencia" onClick={fecharMenu}>Experiência</a></li>
+          <li><a href="#contato" onClick={fecharMenu}>Contato</a></li>
+        </ul>
+      </nav>
     </header>
-)}
+  );
+}
+
+
 
 export default Menu

@@ -2,6 +2,8 @@ import './Contact.css'
 
 function Contact(){
 
+    
+
     return(
 
         <section className="contato" id="contato">

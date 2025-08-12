@@ -1,55 +1,56 @@
-import './Projects.css'
+import Card from './ProjectCard';
+import './Projects.css';
 
-function Projects(){
+function Projects() {
+  const projetos = [
+    {
+      imagem: '/exemple.jpeg',
+      titulo: 'Projeto 1',
+      descricao: 'Descrição do projeto 1',
+      link: 'https://meuprojeto1.com',
+      tags: ['HTML', 'CSS', 'JavaScript']
+    },
+    {
+      imagem: '/exemple.jpeg',
+      titulo: 'Projeto 2',
+      descricao: 'Descrição do projeto 2',
+      link: 'https://meuprojeto2.com',
+      tags: ['React', 'Tailwind', 'API']
+    },
+    {
+      imagem: '/exemple.jpeg',
+      titulo: 'Projeto 3',
+      descricao: 'Descrição do projeto 2',
+      link: 'https://meuprojeto2.com',
+      tags: ['React', 'Tailwind', 'API']
+    },
+    {
+      imagem: '/exemple.jpeg',
+      titulo: 'Projeto 4',
+      descricao: 'Descrição do projeto 4',
+      link: 'https://meuprojeto4.com',
+      tags: ['Node.js', 'Express', 'MongoDB']
+    },
+    // Adicione mais projetos aqui!
+  ];
 
-    return(
-        <section className="projetos" id="projetos">
-            <h2>Projetos</h2>
-            <div className="container">
-                <div className="card">
-                    <img src="public/exemple.jpeg" alt="Projeto 1"/>
-                    <h3>Projeto 1</h3>
-                    <p>Descrição do Projeto 1 e tecnologias usadas.</p>
-                    <div className="tags">
-                        <span className="tag">HTML</span>
-                        <span className="tag">CSS</span>
-                        <span className="tag">JavaScript</span>
-                    </div>
-                    <a href="#" target="_blank">Ver Projeto</a>
-                </div>
-                <div className="card">
-                    <img src="public/exemple.jpeg" alt="Projeto 2"/>
-                    <h3>Projeto 2</h3>
-                    <p>Descrição do Projeto 2 e tecnologias usadas.</p>
-                    <div className="tags">
-                        <span className="tag">React</span>
-                        <span className="tag">Node.js</span>
-                    </div>
-                    <a href="#" target="_blank">Ver Projeto</a>
-                </div>
-                <div className="card">
-                    <img src="public/exemple.jpeg" alt="Projeto 3"/>
-                    <h3>Projeto 3</h3>
-                    <p>Descrição do Projeto 3 e tecnologias usadas.</p>
-                    <div className="tags">
-                        <span className="tag">Vue.js</span>
-                        <span className="tag">Firebase</span>
-                    </div>
-                    <a href="#" target="_blank">Ver Projeto</a>
-                </div>
-                <div className="card">
-                    <img src="public/exemple.jpeg" alt="Projeto 4"/>
-                    <h3>Projeto 4</h3>
-                    <p>Descrição do Projeto 4 e tecnologias usadas.</p>
-                    <div className="tags">
-                        <span className="tag">Angular</span>
-                        <span className="tag">TypeScript</span>
-                    </div>
-                    <a href="#" target="_blank">Ver Projeto</a>
-                </div>
-            </div>
-        </section>
-    )
+  return (
+    <section className="projetos" id="projetos">
+      <h2>Projetos</h2>
+      <div className="container">
+        {projetos.map((projeto, index) => (
+          <Card
+            key={index}
+            imagem={projeto.imagem}
+            titulo={projeto.titulo}
+            descricao={projeto.descricao}
+            link={projeto.link}
+            tags={projeto.tags}
+          />
+        ))}
+      </div>
+    </section>
+  );
 }
 
-export default Projects
+export default Projects;

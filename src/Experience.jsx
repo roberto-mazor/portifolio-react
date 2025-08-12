@@ -1,48 +1,44 @@
-import './Experience.css'
+import ExpCard from './ExpCard';
+import './Experience.css';
 
-function Experience(){
+function Experience() {
+  const experiencias = [
+    {
+      cargo: 'Analista COP Rede I',
+      empresa: 'Claro S.A.',
+      periodo: '2019 - 2023',
+      descricao: 'Monitoramento de rede HFC e análise de falhas técnicas.'
+    },
+    {
+      cargo: 'Suporte Técnico',
+      empresa: 'Escola Municipal Caic Prof. Sylvino Chinelatto',
+      periodo: '2017 - 2018',
+      descricao: 'Suporte a hardware, redes e sistemas.'
+    },
+    {
+      cargo: 'Assistente Administrativo',
+      empresa: 'Auto Escola Cillos',
+      periodo: '2013 - 2015',
+      descricao: 'Gestão de processos, atendimento ao cliente e organização de arquivos.'
+    }
+  ];
 
-    return(
-
-        <section className="experiencia" id="experiencia">
-            <div className="container">
-                <h2>Experiência</h2>
-
-                <div className="exp-card">
-                    <div className="exp-icon">
-                    </div>
-                    <div className="exp-content">
-                        <h3>Analista COP Rede I</h3>
-                        <p><strong>Empresa:</strong> Claro S.A.</p>
-                        <p><strong>Período:</strong> 2019 - 2023</p>
-                        <p>Monitoramento de rede HFC e análise de falhas técnicas.</p>
-                    </div>
-                </div>
-
-                <div className="exp-card">
-                    <div className="exp-icon">
-                    </div>
-                    <div className="exp-content">
-                        <h3>Suporte Técnico</h3>
-                        <p><strong>Empresa:</strong> Escola Municipal Caic Prof. Sylvino Chinelatto</p>
-                        <p><strong>Período:</strong> 2017 - 2018</p>
-                        <p>Suporte a hardware, redes e sistemas.</p>
-                    </div>
-                </div>
-                <div className="exp-card">
-                    <div className="exp-icon">
-                    </div>
-                    <div className="exp-content">
-                        <h3>Assistente Administrativo</h3>
-                        <p><strong>Empresa:</strong> Auto Escola Cillos</p>
-                        <p><strong>Período:</strong> 2013 - 2015</p>
-                        <p>Gestão de processos, atendimento ao cliente e organização de arquivos.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    )
+  return (
+    <section className="experiencia" id="experiencia">
+      <div className="container">
+        <h2>Experiência</h2>
+        {experiencias.map((exp, index) => (
+          <ExpCard
+            key={index}
+            cargo={exp.cargo}
+            empresa={exp.empresa}
+            periodo={exp.periodo}
+            descricao={exp.descricao}
+          />
+        ))}
+      </div>
+    </section>
+  );
 }
 
-export default Experience
+export default Experience;
