@@ -7,10 +7,9 @@ const NotFound = () => {
   return (
     <div className="notfound-container">
       <h1>404</h1>
-      <p>Página não encontrada</p>
+      <p>Página não encontrada, clique no botão para voltar à página inicial.</p>
       <Link to="/" className="back-home">Voltar para o início</Link>
-      <p>Se você acha que isso é um erro, por favor, entre em contato conosco.</p>
-      <p>Obrigado por visitar nosso site!</p> 
+      <p>Obrigado por visitar nosso site!</p>
     </div>
   );
 };

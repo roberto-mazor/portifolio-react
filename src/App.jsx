@@ -6,6 +6,7 @@ import Projects from './Projects';
 import Formation from './Formation';
 import Experience from './Experience';
 import Contact from './Contact';
+import Footer from './Footer';
 import NotFound from './pages/NotFound';
 import React from 'react';
 import './index.css';
@@ -26,6 +27,7 @@ function App() {
               <div id="formation"><Formation /></div>
               <div id="experience"><Experience /></div>
               <div id="contact"><Contact /></div>
+              <div id="Footer"><Footer /></div>
             </>
           }
         />

@@ -60,10 +60,10 @@ function Contact() {
 
 
         <div className="social-links">
-          <a href="https://github.com/seu-usuario" target="_blank">
+          <a href="https://github.com/roberto-mazor" target="_blank">
             <i className="fa-brands fa-github"></i>
           </a>
-          <a href="https://linkedin.com/in/seu-usuario" target="_blank">
+          <a href="https://linkedin.com/in/roberto-de-souza-costa-569790175" target="_blank">
             <i className="fa-brands fa-linkedin"></i>
           </a>
         </div>
