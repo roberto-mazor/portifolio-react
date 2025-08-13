@@ -10,7 +10,7 @@ function Hero (){
                 <p>Desenvolvedor Front-End especializado em criar experiências
                     web incríveis.</p>
                 <div className="links-rapidos">
-                    <a href="#">GitHub</a>
+                    <a href="https://github.com/roberto-mazor">GitHub</a>
                     <a href="#">LinkedIn</a>
                     <a href="#">Currículo PDF</a>
                 </div>
