@@ -86,7 +86,7 @@ emailjs.sendForm(
 O projeto está pronto para deploy em serviços como [Vercel](https://vercel.com/) ou [Netlify](https://www.netlify.com/).  
 Para build de produção:
 
-Hospedade em:
+Hospedado em:
 https://roberto-mazor.vercel.app/
 
 ```sh
