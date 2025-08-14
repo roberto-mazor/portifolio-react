@@ -4,7 +4,7 @@ section {
 
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("gb-image.jpeg");
+    url("/gb-image.jpeg");
   /* Aplica uma imagem de fundo com um gradiente escuro por cima para melhorar a legibilidade do texto */
 
   background-size: cover; /* Faz a imagem cobrir toda a área da seção */
