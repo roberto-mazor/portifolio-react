@@ -1,12 +1,102 @@
-# React + Vite
+# Portfólio React - Roberto Mazor
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um portfólio profissional desenvolvido em [React](https://react.dev/) com [Vite](https://vitejs.dev/), apresentando projetos, formação, experiência e informações de contato.
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Menu responsivo:** Navegação adaptada para desktop e mobile.
+- **Seção Hero:** Apresentação rápida com links para GitHub, LinkedIn e download do currículo.
+- **Sobre Mim:** Breve descrição, habilidades e tecnologias.
+- **Projetos:** Cards de projetos com imagem, descrição, tags e link externo.
+- **Formação:** Linha do tempo de formação acadêmica e cursos complementares.
+- **Experiência:** Cards com experiências profissionais.
+- **Contato:** Formulário funcional via [EmailJS](https://www.emailjs.com/) e links para redes sociais.
+- **Página 404:** Página personalizada para rotas não encontradas.
 
-## Expanding the ESLint configuration
+## Tecnologias Utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [React Router DOM](https://reactrouter.com/)
+- [EmailJS](https://www.emailjs.com/)
+- [Font Awesome](https://fontawesome.com/) (ícones)
+- CSS Modules
+
+## Estrutura do Projeto
+
+```
+src/
+  ├── AboutMe.jsx / AboutMe.css
+  ├── App.jsx / App.css
+  ├── Contact.jsx / Contact.css
+  ├── CursoCard.jsx
+  ├── ExpCard.jsx
+  ├── Experience.jsx / Experience.css
+  ├── Footer.jsx / Footer.css
+  ├── Formation.jsx / Formation.css
+  ├── Hero.jsx / Hero.css
+  ├── Menu.jsx / Menu.css
+  ├── ProjectCard.jsx
+  ├── Projects.jsx / Projects.css
+  ├── pages/NotFound.jsx / NotFound.css
+  └── main.jsx, index.css
+public/
+  ├── perfil.png
+  ├── gb-image.jpeg
+  ├── exemple.jpeg
+  └── CV_TI_Roberto_de_Souza_Costa.pdf
+```
+
+## Instalação e Uso
+
+1. **Clone o repositório:**
+   ```sh
+   git clone https://github.com/roberto-mazor/portifolio-react.git
+   cd portifolio-react
+   ```
+
+2. **Instale as dependências:**
+   ```sh
+   npm install
+   ```
+
+3. **Inicie o servidor de desenvolvimento:**
+   ```sh
+   npm run dev
+   ```
+
+4. **Acesse:**  
+   Abra [http://localhost:5173](http://localhost:5173) no navegador.
+
+## Configuração do EmailJS
+
+Para o formulário de contato funcionar, configure suas credenciais do EmailJS em [`Contact.jsx`](src/Contact.jsx):
+
+```js
+emailjs.sendForm(
+  'service_xxxxxxx', // Service ID
+  'template_xxxxxxx', // Template ID
+  form.current,
+  'user_xxxxxxxxxxxxx' // User ID
+)
+```
+
+## Deploy
+
+O projeto está pronto para deploy em serviços como [Vercel](https://vercel.com/) ou [Netlify](https://www.netlify.com/).  
+Para build de produção:
+
+Hospedade em:
+https://roberto-mazor.vercel.app/
+
+```sh
+npm run build
+```
+
+## Licença
+
+[MIT](LICENSE)
+
+---
+
+Desenvolvido por Roberto Mazor.
