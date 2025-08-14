@@ -8,6 +8,9 @@ function AbautMe() {
             <div className="container">
                 <h2>Sobre Mim</h2>
                 <div className="sobre-mim-content">
+                    <div className="sobre-mim-image">
+                        <img src="/perfil.png" alt="Foto de Roberto" />
+                    </div>
                     <div className="sobre-mim-text">
                         <p>
                             Olá! Eu sou Roberto, um designer web e desenvolvedor

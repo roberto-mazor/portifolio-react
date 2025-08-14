@@ -85,3 +85,21 @@
     flex-direction: column; /* Empilha os elementos verticalmente em telas menores */
   }
 }
+
+.sobre-mim-image {
+  flex: 0 0 220px;
+  text-align: center;
+  align-items: center;
+}
+
+.sobre-mim-image img {
+  width: 100%;
+  max-width: 220px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(254, 253, 255, 0.24);
+  object-fit: cover;
+  
+  
+}
+
+
