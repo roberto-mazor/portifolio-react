@@ -84,6 +84,6 @@ section {
 }
 
 .hero img {
-    width: 100px; /* Reduz o tamanho da imagem */
-    height: 100px;
+    width: 30%; /* Reduz o tamanho da imagem */
+    height: auto; /* Altura automática para manter proporção */
 }
