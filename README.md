@@ -2,6 +2,14 @@
 
 Este é um portfólio profissional desenvolvido em [React](https://react.dev/) com [Vite](https://vitejs.dev/), apresentando projetos, formação, experiência e informações de contato.
 
+
+## Hospedado em:
+https://roberto-mazor.vercel.app/
+
+## Protótipo Figma:
+https://shre.ink/tAYz
+
+
 ## Funcionalidades
 
 - **Menu responsivo:** Navegação adaptada para desktop e mobile.
@@ -86,8 +94,6 @@ emailjs.sendForm(
 O projeto está pronto para deploy em serviços como [Vercel](https://vercel.com/) ou [Netlify](https://www.netlify.com/).  
 Para build de produção:
 
-Hospedado em:
-https://roberto-mazor.vercel.app/
 
 ```sh
 npm run build
