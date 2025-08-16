@@ -1,8 +1,8 @@
-function CursoCard(props) {
+function CursoCard({ titulo, instituicao  }) {
   return (
     <div className="curso-card">
-      <h4>{props.titulo}</h4>
-      <p>{props.instituicao}</p>
+      <h4>{titulo}</h4>
+      <p>{instituicao}</p>
     </div>
   );
 }
