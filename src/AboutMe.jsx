@@ -1,7 +1,8 @@
 import './AboutMe.css'
 
 
-function AbautMe() {
+// Corrigido: AbautMe -> AboutMe (e no export)
+function AboutMe() {
 
     return (
         <section className="sobre-mim" id="sobre-mim">
@@ -51,4 +52,5 @@ function AbautMe() {
     )
 }
 
-export default AbautMe
+// Corrigido: AbautMe -> AboutMe
+export default AboutMe
