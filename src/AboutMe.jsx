@@ -28,24 +28,7 @@ function AboutMe() {
                             melhorar a experiência do usuário.
                         </p>
                     </div>
-                    <div className="sobre-mim-icons">
-                        <div className="icon">
-                            <i className="fa-brands fa-html5"></i>
-                            <p>HTML</p>
-                        </div>
-                        <div className="icon">
-                            <i className="fa-brands fa-css3-alt"></i>
-                            <p>CSS</p>
-                        </div>
-                        <div className="icon">
-                            <i className="fa-brands fa-js"></i>
-                            <p>JavaScript</p>
-                        </div>
-                        <div className="icon">
-                            <i className="fa-brands fa-react"></i>
-                            <p>React</p>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </section>

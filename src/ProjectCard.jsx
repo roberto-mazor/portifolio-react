@@ -20,6 +20,11 @@ function Card(props) {
           Ver Projeto
         </a>
       )}
+      {props.link && (
+        <a href={props.link} target="_blank" rel="noopener noreferrer">
+          Ver Projeto
+        </a>
+      )}
     </div>
   );
 }

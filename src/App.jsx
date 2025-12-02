@@ -2,6 +2,7 @@ import './App.css';
 import Menu from './Menu';
 import Hero from './Hero';
 import AbautMe from './AboutMe';
+import Skills from './Skills';
 import Projects from './Projects';
 import Formation from './Formation';
 import Experience from './Experience';
@@ -11,6 +12,8 @@ import NotFound from './pages/NotFound';
 import React from 'react';
 import './index.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+
 
 function App() {
   return (
@@ -23,6 +26,7 @@ function App() {
               <Menu />
               <div id="hero"><Hero /></div>
               <div id="about"><AbautMe /></div>
+              <div id="Skills"><Skills /></div>
               <div id="projects"><Projects /></div>
               <div id="formation"><Formation /></div>
               <div id="experience"><Experience /></div>

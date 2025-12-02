@@ -1,0 +1,71 @@
+/* Skills.css */
+
+.software-skills-container {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #333; 
+    text-align: center; 
+}
+
+.software-skills-container h3 {
+    color: #bb86fc;
+    font-size: 1.8em;
+    margin-bottom: 30px;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px 40px; 
+    margin-bottom: 80px;
+
+}
+
+.skill-item {
+    text-align: center;
+    /* 💡 AJUSTE 1: Aumentamos a largura para acomodar textos mais longos como 'Node.js' e 'MongoDB' */
+    width: 120px; 
+    padding: 10px 0;
+    transition: all 0.4s ease-out; 
+}
+
+.skill-item:hover {
+    transform: scale(1.1) translateY(-5px);
+}
+
+.skill-item svg {
+    font-size: 48px;
+    color: #bb86fc;
+    margin-bottom: 5px;
+    /* 💡 AJUSTE 2: Garantir que o SVG seja um bloco centralizado */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skill-item p {
+    color: #ccc; 
+    font-size: 0.95em;
+    line-height: 1.2;
+    margin: 0;
+    /* 💡 AJUSTE 3: Garante que o texto fique centralizado dentro do item */
+    text-align: center; 
+    /* Garante que o texto não force quebra de linha desnecessária */
+    word-break: normal; 
+    white-space: normal;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 480px) {
+    .skills-grid {
+        gap: 20px;
+    }
+    .skill-item {
+        /* Reduzimos a largura para telas menores, mas mantemos o espaço para o nome */
+        width: 90px;
+    }
+    .skill-item svg {
+        font-size: 40px;
+    }
+}
